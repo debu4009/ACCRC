@@ -1,0 +1,60 @@
+/* রোবট স্টাইলিং */
+#sci-fi-robot {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(135deg, #1a2a6c, #0a0e23);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(65, 105, 225, 0.6);
+    border: 3px solid #4169e1;
+}
+
+.robot-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 40px;
+}
+
+.eye {
+    width: 60px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    border: 3px solid #0a0e23;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.pupil {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #0a0e23;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+}
+
+#robot-mouth {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 30px;
+    background: #0a0e23;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
